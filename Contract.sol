@@ -355,8 +355,8 @@ contract ERC20Token is Context, IERC20, Ownable {
   constructor() public {
     _name = "BelRub";
     _symbol = "BYN";
-    _decimals = 18;
-    _totalSupply = 100000000;
+    _decimals = 2;
+    _totalSupply = 100;
     _balances[msg.sender] = _totalSupply;
 
     emit Transfer(address(0), msg.sender, _totalSupply);
